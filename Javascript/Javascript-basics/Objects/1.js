@@ -1,4 +1,4 @@
-//working with data class and its methods
+  //working with data class and its methods
 let obj = new Date();
 console.log(obj); //current system date & time
 console.log(obj.toLocaleString()); //retrun local date and time

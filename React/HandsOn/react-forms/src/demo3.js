@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 const MyForm = () => {
-  const [uname, setName] = useState("");
+  // const [uname, setName] = useState("");     uname and setName: uname is a state variable for holding the current value of the text input. setName is the function used to update this state.
   const [names, setNames] = useState([]);
   const save = (e) => {
     setNames([...names, uname]);

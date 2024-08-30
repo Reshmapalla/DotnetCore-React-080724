@@ -1,4 +1,4 @@
-//function defination
+ //function defination
 // function fun_name(args)
 // {
 //     //statements

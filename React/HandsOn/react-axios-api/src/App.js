@@ -10,7 +10,7 @@ import UserDashboard from "./user-dashboard";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route index element={<GetProducts />} />
           <Route path="add" element={<AddProduct />} />
@@ -20,7 +20,8 @@ function App() {
           <Route path="admin-dashboard" element={<AdminDashboard />} />
           <Route path="user-dashboard" element={<UserDashboard />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <AdminDashboard />
     </div>
   );
 }

@@ -4,7 +4,8 @@ while(n<=10)
     console.log('Javascript is Object based');
     n++;
 }
-while (n <= 100) {
+while (n <= 100) 
+{
   console.log(n);
   n++;
 }
