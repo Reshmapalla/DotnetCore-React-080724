@@ -21,6 +21,7 @@ namespace UnitTestingWithMoq
             var productResult = result.GetProductList().ToList();
             Assert.NotNull(productResult);
             Assert.Equal(productList.Count, productResult.Count);
+            Assert.NotEqual(0, productResult.Count);
         }
         [Fact]
         public void Test_GetProductByID()
@@ -31,10 +32,8 @@ namespace UnitTestingWithMoq
                 .Returns(productList[1]);
             var result = productService.Object; //moq service
             //act
-            var productResult = result.GetProductById(2);
+            var productResult = result.GetProductById(3);
             //assert
-            Assert.NotNull(productResult);
-            Assert.Equal(productList[1].ProductId, productResult.ProductId);
             Assert.True(productList[1].ProductId == productResult.ProductId);
         }
         [Fact]
@@ -69,7 +68,7 @@ namespace UnitTestingWithMoq
                 .Returns(productList[3]);
             var result = productService.Object; //moq service
             //act
-            var productResult = result.AddProduct(productList[3]);
+            var productResult = result.AddProduct(product);
             //assert
             Assert.NotNull(productResult);
             Assert.Equal(productList[3].ProductId, productResult.ProductId);
