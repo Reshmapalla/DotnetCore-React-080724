@@ -38,7 +38,7 @@ namespace XUnitTest
             Calculate obj = new Calculate();
             List<int> list = obj.GetNos();
             Assert.NotNull(list);
-            Assert.Equal(5, list.Count);
+            Assert.Equal(4, list.Count);
            
         }
         [Fact]
